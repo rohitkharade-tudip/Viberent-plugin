@@ -1,17 +1,17 @@
 <?php
-/*
-Plugin Name: Login To Viberent
-Plugin URI: 
-Description: Login
-Version: 1.0
-Author: Rizeen
-Author URI: 
-License: GPLv2 or later
-Text Domain: viberent login
-*/
-?>
 
-<?php
+/**
+ * Login To Viberent
+ * 
+ * Plugin Name: Login To Viberent
+ * Plugin URI: https://wordpress.org/plugins/login-to-viberent
+ * Description: Login
+ * Version: 1.0
+ * Author: Rohit
+ * Author URI: https://github.com/rohitkharade-tudip/Viberent-plugin
+ * License: GPLv2 or later
+ * Text Domain: viberent login
+ */
 define('VIBERENT__PLUGIN_DIR', plugin_dir_path(__FILE__));
 
 //register the css files
@@ -24,6 +24,6 @@ function my_admin_scripts()
 }
 add_action('admin_enqueue_scripts', 'my_admin_scripts');
 
-require_once(VIBERENT__PLUGIN_DIR . 'functions-layout-api.php');
-require_once(VIBERENT__PLUGIN_DIR . 'viberent-hook.php');
-
+include_once('functions-layout-api.php');
+include_once('viberent-hook.php');
+?>

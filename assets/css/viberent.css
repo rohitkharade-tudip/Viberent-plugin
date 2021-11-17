@@ -9,6 +9,10 @@
   text-align: left;
 }
 
+#pagename {
+  width: 300px;
+}
+
 p#plz_choos_layout {
   font-size: 15px;
 }
@@ -89,6 +93,10 @@ body {
   background-color: white !important;
 }
 
+#chosen_message{
+      margin: 30px 0;
+}
+
 
 /* Add Zoom Animation */
 .animate {
@@ -154,7 +162,7 @@ img#layout_option_img:hover {
 }
 
 #change_selected_layout{
-  background-color: #24bcdc;
+  background-color: #4d96d5;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
